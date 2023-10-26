@@ -19,7 +19,7 @@ public class even_number_of_digit {
           }
 
  static boolean even(int num) {
-int numberofdigits =digits(num);
+int numberofdigits = digits(num);
      return numberofdigits % 2 == 0;
  }
 
