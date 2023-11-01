@@ -10,7 +10,7 @@ package piyush;
 public class SIMILAR_TO_CEILING {
     public static void main(String[] args) {
        int[] arr={'a','b','c','g', 'l','x'};
-       int  target = 'z';
+       int  target = 'x';
       char ans = (char) search(arr,target);
         System.out.println(ans);
     }
@@ -21,12 +21,12 @@ public class SIMILAR_TO_CEILING {
 
         while(start<=end){
             int mid= start +(end-start)/2;
-                    if(target>arr[mid]){
+                    if(target>=arr[mid]){
                 start = mid+1;
             }
             else if (target<arr[mid]) {
-                end=mid-1;
-            }
+                        end = mid - 1;
+                    }
         }
         return arr[start%arr.length];
     }
