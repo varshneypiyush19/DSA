@@ -6,24 +6,16 @@
 
 package piyush;
 
-import java.util.Arrays;
-
 public class first_and_last_occuerence{
     public static void main(String[] args){
        int[] arr ={2,5,7,7,7,8,9};
        int target=7;
-       int[] sol = search(arr,target);
-        System.out.println(Arrays.toString(sol));
-    }
- static  int[] search(int[] arr, int target){
-        int[] ans = {-1,-1};
-        int start = search1(arr, target, true) ;
-        int end = search1(arr,target,false);
-        ans[0]=start;
-        ans[1]=end;
-        return ans ;
-    }
+       int[] ans = {-1,-1};
+        ans[0]= search1(arr, target, true) ;
+        ans[1] = search1(arr,target,false);
 
+        System.out.println("first occurrence"+arr[0]+"last occurrence" + arr[1]);
+    }
      static int search1(int[] arr,int target,boolean find_first_index){
         int ans = -1;
 
