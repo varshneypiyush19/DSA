@@ -2,27 +2,35 @@ package piyush;
 
 public class infinite_binary_search {
     public static void main(String[] args) {
-        int[] arr={};
+        int[] arr={ 2,4,5,6,7,8,9,15,23,45,66,89,90,99};
        int target =15;
-       int ans =search(arr,target);
-        System.out.println(ans);
+        System.out.println(findingrange(arr,target));
     }
 
-    static int search(int[] arr,int target){
-        int ans =0;
-        for(int i=0;i)
-       int start= 0 + int n;
-       int end=;
+    static int findingrange(int[] arr , int target){
+         int start = 0;
+         int end=1;
+         while(target>arr[end]){
+             int newstart = end +1;
+             end = end +(end- start + 1)*2;
+             start= newstart;
+         }
+         return search(arr,target,start,end);
+    }
+    static int search(int[] arr,int target ,int start ,int end){
        while(start<=end){
          int mid = start+(end-start)/2;
-           if(target<mid){
+           if(target<arr[mid]){
                end=mid-1;
            }
-           else if(target>mid){
+           else if(target>arr[mid]){
                start=mid-1;
+           }
+           else{
+              return mid;
            }
        }
 
-        return ans;
+        return -1;
     }
 }
