@@ -3,15 +3,14 @@
 //arr[0]<arr[1]......arr[i-1]<arr[i]
 //arr[i]>arr[i+1}>....>arr[arr.length-1]
 // i.e.  arr[0]<arr[1]......arr[i-1]<arr[i]>arr[i+1}>....>arr[arr.length-1]
-
-
+// position of highest element in the array //peak
 
 
 
 
 package piyush;
 
-public class postion_of_element_in_infinite_array {
+public class peak_or_mountain {
     public static void main(String[] args) {
        int[] arr = {1,2,3,4,5,6,7,3,2,1};
        int ans = peak(arr);
