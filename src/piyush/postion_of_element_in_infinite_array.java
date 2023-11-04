@@ -11,7 +11,7 @@
 
 package piyush;
 
-public class peak_element {
+public class postion_of_element_in_infinite_array {
     public static void main(String[] args) {
        int[] arr = {1,2,3,4,5,6,7,3,2,1};
        int ans = peak(arr);
