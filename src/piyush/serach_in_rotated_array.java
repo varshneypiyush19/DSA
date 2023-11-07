@@ -1,4 +1,4 @@
-//integer array named nums sorted in ascending order(with distinct value)
+//integer array named nums sorted in asscending order(with distinct value)
 //prior to being passed to your function ,nums is rotated at an unknown index 'k'
 //(0<=k<num.length) suck that the resulting array is (nums[k],num[k+1],....,nums[n-1],nums[0],nums[1],...,nums[k-1])
 //example [0,1,2,4,5,6,7] rotated at pivot index 3
